@@ -27,7 +27,8 @@ body{
    max-width: 1170;
    padding: 0 15px;
 }
-.calculator{padding: 50px 40px;
+.calculator{
+   padding: 50px 40px;
    min-width: 310px;
    border: 1px solid black;
    background-color: rgb(234, 156, 55);
@@ -49,7 +50,9 @@ body{
    text-align: right;
 }
 .row{
-   max-width:  100%;
+   display: flex;
+   justify-content: space-between;
+   width:  100%;
    margin-bottom: 10px;
 }
 .btn{
@@ -95,42 +98,31 @@ body{
  @media (max-width: 520px){
    .btn{
       height: 30px;
-      width: 60px;
-      
-      margin-right: 5px;
-      border-radius: 10px;
-      border: none;
+      width: 60px;      
       font-size: 14px;
-      outline: none;
    }
    display{
-      height: 30px;
-      width: 100%;
-      margin-bottom: 20px;
-      border-radius: 10px;
-     
+      height: 30px;     
       font-size: 20px;
    }
-   
  }
 
  @media (max-width: 460px){
    .btn{
-      height: 20px;
-      width: 35px;
+      height: 30px;
+      width: 57px;
       
-      margin-right: 3px;
-      border-radius: 10px;
-      border: none;
       font-size: 12px;
-      outline: none;
    }
    display{
-      height: 30px;
-      width: 100%;
-      margin-bottom: 20px;
-      border-radius: 10px;
-     
-      font-size: 20px;
+      height: 30px;     
+      font-size: 15px;
+   }
+ }
+ @media (max-width: 410px){
+   .btn{
+      height: 25px;
+      width: 47px;      
+      
    }
  }

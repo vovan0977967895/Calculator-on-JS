@@ -19,9 +19,6 @@ if(itemText !== 'AC' && itemText !== 'C' &&  itemText !== '='){
 if(itemText === 'AC'){
     display.value = '';
 }
-if(itemText === 'AC'){
-    display.value = '';
-}
 if(itemText === 'C'){
     display.value = display.value.slice(0, -1);
 }

@@ -26,7 +26,7 @@ if(itemText === 'C'){
     display.value = display.value.slice(0, -1);
 }
 if(itemText === '='){
-    display.value = eval(display.value);
+    display.value = eval(display.value).toFixed(4);
 }
 console.log(itemText);
 });
@@ -34,7 +34,7 @@ console.log(itemText);
 });
 
 const sin = () =>{
-display.value = Math.sin(display.value*3.1415926535/180)
+display.value = Math.sin(display.value*3.1415926535/180).toFixed(4);
 }
 
 btnsCalculate.forEach((item) => {

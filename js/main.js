@@ -45,6 +45,9 @@ display.value = Math.tan(display.value*3.1415926535/180).toFixed(4);
 const pow = () =>{
     display.value = Math.pow(display.value, 2).toFixed(4);
     }
+const sqrt = () =>{
+    display.value = Math.sqrt(display.value).toFixed(4);
+    }
 
 btnsCalculate.forEach((item) => {
     item.addEventListener('click', (e) =>{
@@ -61,6 +64,9 @@ btnsCalculate.forEach((item) => {
     }
     if(itemText === 'Х²'){
         pow();
+    }
+    if(itemText === '√'){
+        sqrt();
     }
     
     });

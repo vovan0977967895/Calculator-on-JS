@@ -36,6 +36,15 @@ console.log(itemText);
 const sin = () =>{
 display.value = Math.sin(display.value*3.1415926535/180).toFixed(4);
 }
+const cos = () =>{
+display.value = Math.cos(display.value*3.1415926535/180).toFixed(4);
+}
+const tan = () =>{
+display.value = Math.tan(display.value*3.1415926535/180).toFixed(4);
+}
+const pow = () =>{
+    display.value = Math.pow(display.value, 2).toFixed(4);
+    }
 
 btnsCalculate.forEach((item) => {
     item.addEventListener('click', (e) =>{
@@ -44,7 +53,16 @@ btnsCalculate.forEach((item) => {
     if(itemText === 'sin'){
         sin();
     }
-    console.log(itemText);
+    if(itemText === 'cos'){
+        cos();
+    }
+    if(itemText === 'tan'){
+        tan();
+    }
+    if(itemText === 'Х²'){
+        pow();
+    }
+    
     });
     
     });
